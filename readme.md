@@ -39,11 +39,11 @@ Count the number of board games that can be played by 8 people.
 
 
 Find all animals that are swimming and egg-laying.
-
+  SELECT * FROM animals WHERE swimming='t' AND egg_laying='t';
 
 
 Find all animals that are swimming and egg-laying but not flying.
-
+  SELECT * FROM animals WHERE swimming='t' AND egg_laying='t' AND flying='f';
 
 
 Find the board game that supports the largest number of people.
