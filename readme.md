@@ -31,7 +31,7 @@ Find the recipe that takes the most time to prepare.
 
 
 Find all the robots whose name starts with the letter M.
-
+  SELECT * FROM robots WHERE name LIKE 'M%';
 
 
 Count the number of board games that can be played by 8 people.
