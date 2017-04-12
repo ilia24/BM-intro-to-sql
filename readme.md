@@ -27,7 +27,7 @@ Find the board game that takes the least amount of time to play.
 
 
 Find the recipe that takes the most time to prepare.
-
+  SELECT * FROM recipes ORDER BY minutes_required DESC LIMIT 1;
 
 
 Find all the robots whose name starts with the letter M.
@@ -35,7 +35,7 @@ Find all the robots whose name starts with the letter M.
 
 
 Count the number of board games that can be played by 8 people.
-
+  SELECT COUNT(id) FROM board_games WHERE max_players>=8;
 
 
 Find all animals that are swimming and egg-laying.
@@ -47,3 +47,4 @@ Find all animals that are swimming and egg-laying but not flying.
 
 
 Find the board game that supports the largest number of people.
+  SELECT * FROM board_games ORDER BY max_players DESC LIMIT 1;
