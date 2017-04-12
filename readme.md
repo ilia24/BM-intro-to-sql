@@ -19,11 +19,11 @@ Count the number of recipes that are gluten free but not vegetarian.
 
 
 Find the animal with the most legs.
-
+  SELECT * FROM animals ORDER BY number_of_legs DESC LIMIT 1;
 
 
 Find the board game that takes the least amount of time to play.
-
+  SELECT * FROM board_games ORDER BY mins_to_play ASC LIMIT 1;
 
 
 Find the recipe that takes the most time to prepare.
