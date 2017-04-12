@@ -11,11 +11,11 @@ Find the robot with an "anxious" personality.
 
 
 Find all recipes that are nut free.
-
+  SELECT * FROM recipes WHERE nut_free='t';
 
 
 Count the number of recipes that are gluten free but not vegetarian.
-
+  SELECT COUNT(id) FROM recipes WHERE gluten_free='t' AND vegetarian='f';
 
 
 Find the animal with the most legs.
